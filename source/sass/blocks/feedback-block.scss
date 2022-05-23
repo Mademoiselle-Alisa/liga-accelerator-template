@@ -1,0 +1,322 @@
+.feedback-block {
+  display: flex;
+  flex-direction: row;
+
+  padding: 166px 0 248px;
+
+  background: $color-deep-sky-blue url("../img/polygon.svg") no-repeat -0.4% 93%;
+
+  align-items: center;
+  justify-content: center;
+
+  @include vp-1220 {
+    padding: 46px 0 125px;
+    background-image: none;
+  }
+
+  @include vp-770 {
+    padding: 47px 0 89px;
+  }
+}
+
+.feedback-block img {
+  width: 510px;
+  height: 285px;
+  margin-top: 18px;
+  margin-right: 115px;
+  margin-left: -10px;
+
+  @include vp-1220 {
+    display: none;
+  }
+}
+
+.feedback-block__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  @include vp-1220 {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  @include vp-770 {
+    padding: 0 25px;
+  }
+}
+
+.feedback-block__wrapper h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 51px;
+
+  margin: 0 0 11px 0;
+  padding: 0;
+
+  color: $color-default-white;
+
+  @include vp-1220 {
+    margin: 0 0 6px;
+  }
+
+  @include vp-770 {
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0 0 7px;
+  }
+}
+
+.feedback-block__wrapper p {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  padding-left: 5px;
+
+  color: $color-default-white;
+
+  @include vp-1220 {
+    margin: 0 0 25px;
+    padding: 0;
+  }
+
+  @include vp-770 {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 0 34px;
+  }
+}
+
+.feedback-block__wrapper form {
+  display: flex;
+  flex-direction: row;
+
+  width: 580px;
+  margin-left: 5px;
+
+  flex-wrap: wrap;
+
+  @include vp-1220 {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+.feedback-block__wrapper input[type=text],
+.feedback-block__wrapper input[type=tel] {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+
+  width: 275px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  background: rgba(4, 20, 39, 0.15);
+
+  @include vp-1220 {
+    width: 48%;
+    min-width: 320px;
+  }
+
+  @include vp-770 {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+.feedback-block__wrapper input:not(:nth-last-of-type(2n+1)) {
+  margin-right: 30px;
+
+  @include vp-1220 {
+    margin-right: 0;
+  }
+}
+
+.feedback-block__wrapper textarea {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+
+  width: 580px;
+  height: 155px;
+  margin-bottom: 35px;
+  padding: 23px 15px;
+
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  background: rgba(4, 20, 39, 0.15);
+
+  @include vp-1220 {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  @include vp-770 {
+    height: 180px;
+    padding: 23px 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback-block__wrapper input::placeholder,
+.feedback-block__wrapper textarea::placeholder {
+  color: $color-default-white;
+}
+
+.feedback-block__wrapper button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px;
+
+  width: 265px;
+  height: 45px;
+  margin-right: 50px;
+  padding: 4px 0 0 0;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  background: #041427;
+  cursor: pointer;
+
+  @include vp-1220 {
+    margin-right: 84px;
+    width: 39%;
+    min-width: 265px;
+  }
+
+  @include vp-770 {
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+  }
+}
+
+.feedback-block__wrapper button:hover {
+  color: #041427;
+  background: $color-default-white;
+}
+
+.feedback-block__agreement-wrapper {
+  display: flex;
+
+  @include vp-1220 {
+    flex: auto;
+  }
+}
+
+.feedback-block__agreement-wrapper label {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+
+  position: relative;
+
+  width: 226px;
+  margin-top: 15px;
+  padding: 0 0 0 26px;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  opacity: 0.8;
+  color: $color-default-white;
+
+  @include vp-1220 {
+    width: 100%;
+    max-width: 235px;
+    margin-top: 10px;
+  }
+
+  @include vp-770 {
+
+    margin-top: 25px;
+    padding: 0 0 0 31px;
+  }
+}
+
+.feedback-block__agreement-wrapper label::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  display: block;
+
+  width: 15px;
+  height: 15px;
+
+  content: "";
+
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+
+  @include vp-1220 {
+    top: 7px;
+    left: 1px;
+  }
+
+  @include vp-770 {
+    left: 5px;
+  }
+}
+
+.feedback-block__agreement-wrapper label::after {
+  position: absolute;
+  top: 11px;
+  left: 3px;
+
+  display: block;
+
+  width: 7px;
+  height: 4px;
+
+  content: "";
+  transform: rotate(-45deg);
+
+  opacity: 0;
+  border: 1px solid $color-default-white;
+  border-top: none;
+  border-right: none;
+
+  @include vp-1220 {
+    top: 11px;
+    left: 4px;
+  }
+
+  @include vp-770 {
+    left: 9px;
+  }
+}
+
+.feedback-block__agreement-wrapper input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
